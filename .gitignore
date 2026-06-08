@@ -1,0 +1,29 @@
+# 활발 프로젝트 (별도 관리)
+/msds-translator/
+/1hermes/
+/agent-hq/
+/Obsidian/
+
+# 나중에 판단할 폴더들
+/chemical-crm/
+/.cache/
+/news-shorts-bot/
+
+# 시스템 파일
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# 개발
+node_modules/
+venv/
+__pycache__/
+*.pyc
+.next/
+.turbo/
+dist/

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>계산기</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f2f2f7;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+
+    .calc {
+      width: 340px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 40px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    /* Display */
+    .display {
+      padding: 32px 24px 20px;
+      background: #1c1c1e;
+      text-align: right;
+    }
+
+    .expr {
+      font-size: 13px;
+      color: rgba(255,255,255,0.35);
+      min-height: 18px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .value {
+      font-size: 44px;
+      font-weight: 200;
+      color: #fff;
+      margin-top: 4px;
+      letter-spacing: -2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Button grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid button {
+      height: 68px;
+      border: none;
+      border-top: 1px solid #ebebeb;
+      border-right: 1px solid #ebebeb;
+      background: #fff;
+      font-size: 18px;
+      color: #1c1c1e;
+      cursor: pointer;
+      transition: background 0.1s;
+    }
+
+    .grid button:nth-child(4n) { border-right: none; }
+    .grid button:hover  { background: #f7f7f7; }
+    .grid button:active { background: #efefef; }
+
+    .btn-fn {
+      font-size: 14px;
+      color: #888;
+      font-weight: 500;
+    }
+
+    .btn-op {
+      color: #5856d6;
+      font-size: 20px;
+    }
+
+    .btn-op.lit {
+      background: #5856d6;
+      color: #fff;
+    }
+    .btn-op.lit:hover  { background: #4745b5; }
+    .btn-op.lit:active { background: #3c3ba0; }
+
+    .btn-eq {
+      background: #5856d6;
+      color: #fff;
+      font-size: 22px;
+    }
+    .btn-eq:hover  { background: #4745b5; }
+    .btn-eq:active { background: #3c3ba0; }
+
+    .btn-wide {
+      grid-column: span 2;
+      text-align: left;
+      padding-left: 26px;
+    }
+  </style>
+</head>
+<body>
+<div class="calc">
+  <div class="display">
+    <div class="expr" id="expr"></div>
+    <div class="value" id="val">0</div>
+  </div>
+  <div class="grid">
+    <button class="btn-fn" onclick="ac()">AC</button>
+    <button class="btn-fn" onclick="sign()">+/−</button>
+    <button class="btn-fn" onclick="pct()">%</button>
+    <button class="btn-op" id="op-/" onclick="op('/')">÷</button>
+
+    <button onclick="num('7')">7</button>
+    <button onclick="num('8')">8</button>
+    <button onclick="num('9')">9</button>
+    <button class="btn-op" id="op-*" onclick="op('*')">×</button>
+
+    <button onclick="num('4')">4</button>
+    <button onclick="num('5')">5</button>
+    <button onclick="num('6')">6</button>
+    <button class="btn-op" id="op--" onclick="op('-')">−</button>
+
+    <button onclick="num('1')">1</button>
+    <button onclick="num('2')">2</button>
+    <button onclick="num('3')">3</button>
+    <button class="btn-op" id="op-+" onclick="op('+')">+</button>
+
+    <button class="btn-wide" onclick="num('0')">0</button>
+    <button onclick="dot()">.</button>
+    <button class="btn-eq" onclick="eq()">=</button>
+  </div>
+</div>
+
+<script>
+  const SYM = { '+': '+', '-': '−', '*': '×', '/': '÷' };
+
+  let cur = '0';
+  let prev = null;
+  let pendingOp = null;
+  let fresh = false;  // next digit press starts new number
+
+  const valEl  = document.getElementById('val');
+  const exprEl = document.getElementById('expr');
+
+  function fmt(n) {
+    if (isNaN(n)) return 'Error';
+    if (Math.abs(n) >= 1e13) return n.toExponential(4);
+    return parseFloat(n.toPrecision(12))
+      .toLocaleString('en-US', { maximumFractionDigits: 10 });
+  }
+
+  function show() {
+    const n = parseFloat(cur);
+    valEl.textContent = isNaN(n) ? 'Error' : fmt(n);
+  }
+
+  function clearOps() {
+    document.querySelectorAll('.btn-op').forEach(b => b.classList.remove('lit'));
+  }
+
+  function num(d) {
+    if (fresh) { cur = d; fresh = false; }
+    else cur = (cur === '0') ? d : cur + d;
+    show();
+  }
+
+  function dot() {
+    if (fresh) { cur = '0.'; fresh = false; show(); return; }
+    if (!cur.includes('.')) { cur += '.'; show(); }
+  }
+
+  function ac() {
+    cur = '0'; prev = null; pendingOp = null; fresh = false;
+    exprEl.textContent = '';
+    clearOps();
+    show();
+  }
+
+  function sign() {
+    cur = String(parseFloat(cur) * -1);
+    show();
+  }
+
+  function pct() {
+    cur = String(parseFloat(cur) / 100);
+    show();
+  }
+
+  function runCalc() {
+    const a = parseFloat(prev), b = parseFloat(cur);
+    if (pendingOp === '+') return a + b;
+    if (pendingOp === '-') return a - b;
+    if (pendingOp === '*') return a * b;
+    if (pendingOp === '/') return b === 0 ? NaN : a / b;
+    return b;
+  }
+
+  function op(o) {
+    clearOps();
+    document.getElementById('op-' + o).classList.add('lit');
+
+    if (pendingOp && !fresh) {
+      const r = runCalc();
+      cur = isNaN(r) ? 'NaN' : String(parseFloat(r.toPrecision(12)));
+      show();
+    }
+
+    prev = cur;
+    pendingOp = o;
+    fresh = true;
+    exprEl.textContent = fmt(parseFloat(prev)) + ' ' + SYM[o];
+  }
+
+  function eq() {
+    if (!pendingOp) return;
+    const a = fmt(parseFloat(prev));
+    const b = fmt(parseFloat(cur));
+    const r = runCalc();
+    exprEl.textContent = a + ' ' + SYM[pendingOp] + ' ' + b + ' =';
+    cur = isNaN(r) ? 'NaN' : String(parseFloat(r.toPrecision(12)));
+    pendingOp = null;
+    prev = null;
+    fresh = true;
+    clearOps();
+    show();
+  }
+
+  // Keyboard support
+  document.addEventListener('keydown', e => {
+    if (e.key >= '0' && e.key <= '9') num(e.key);
+    else if (e.key === '.')              dot();
+    else if (e.key === '+')             op('+');
+    else if (e.key === '-')             op('-');
+    else if (e.key === '*')             op('*');
+    else if (e.key === '/') { e.preventDefault(); op('/'); }
+    else if (e.key === 'Enter' || e.key === '=') eq();
+    else if (e.key === 'Escape')        ac();
+    else if (e.key === 'Backspace') {
+      cur = cur.length > 1 ? cur.slice(0, -1) : '0';
+      show();
+    }
+  });
+</script>
+</body>
+</html>
