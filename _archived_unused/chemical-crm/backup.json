@@ -1,0 +1,56 @@
+{
+  "leads": [
+    {
+      "id": "cmmlfui3c0000m8z8y8lu1k4x",
+      "companyName": "silverstar chemical",
+      "contactName": "SILVER STAR CHEMICAL",
+      "email": "gudwls5337@gmail.com",
+      "country": "대한민국",
+      "segment": "exhibition_booth",
+      "pipelineStage": "NEW",
+      "createdAt": "2026-03-11T02:47:08.568Z"
+    },
+    {
+      "id": "cmmlfvq110001m8z8iqsdgm8x",
+      "companyName": "silverstar chemical",
+      "contactName": "SILVER STAR CHEMICAL",
+      "email": "gudwls5337@gmail.com",
+      "country": "대한민국",
+      "segment": "tendata_volume",
+      "pipelineStage": "CONTACTED",
+      "createdAt": "2026-03-11T02:48:05.354Z"
+    },
+    {
+      "id": "cmmlp832800004w688699npbe",
+      "companyName": "silverstar chemical",
+      "contactName": "SILVER STAR CHEMICAL",
+      "email": "gudwls5337@gmail.com",
+      "country": "대한민국",
+      "segment": "tendata_volume",
+      "pipelineStage": "PROPOSED",
+      "createdAt": "2026-03-11T07:09:38.665Z"
+    }
+  ],
+  "mailLogs": [],
+  "sequences": [
+    {
+      "id": "cmmlp8f1g00014w68jd6648kg",
+      "name": "dddddd",
+      "description": "dddd",
+      "createdAt": "2026-03-11T07:09:54.191Z"
+    },
+    {
+      "id": "cmmlp8g0a00024w68y034cub0",
+      "name": "dddddd",
+      "description": "dddd",
+      "createdAt": "2026-03-11T07:09:54.495Z"
+    },
+    {
+      "id": "cmmlpawf000034w68l6932dx2",
+      "name": "ㅇㄴㄹㄴㅇㄻㅇㄴㄹ",
+      "description": "ㅁㄴㅇㄻㄴㅇㄹ",
+      "createdAt": "2026-03-11T07:11:50.172Z"
+    }
+  ],
+  "sequenceSteps": []
+}

@@ -1,0 +1,121 @@
+{
+  "rankedAt": "2026-03-27T01:33:58.882Z",
+  "totalIssues": 176,
+  "topN": 20,
+  "items": [
+    {
+      "rank": 1,
+      "clusterKeyword": "인적쇄신",
+      "representativeTitle": "인적쇄신 막힌 오세훈 “18% 지지율로 어떻게 선거…참 안타깝다”",
+      "representativeUrl": "https://www.hani.co.kr/arti/politics/politics_general/1251398.html",
+      "representativeKeywords": [
+        "인적쇄신",
+        "막힌",
+        "오세훈"
+      ],
+      "articleCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "한겨레"
+      ],
+      "latestPubDate": "2026-03-27T01:33:58.842Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 25,
+        "keywordRepeatScore": 12,
+        "shortsFitScore": 5,
+        "briefPenalty": -8,
+        "finalScore": 39
+      },
+      "articles": [
+        {
+          "title": "인적쇄신 막힌 오세훈 “18% 지지율로 어떻게 선거…참 안타깝다”",
+          "link": "https://www.hani.co.kr/arti/politics/politics_general/1251398.html",
+          "description": "",
+          "pubDate": "2026-03-27T01:33:58.842Z",
+          "source": "한겨레"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    },
+    {
+      "rank": 2,
+      "clusterKeyword": "대통령",
+      "representativeTitle": "이 대통령 “스토리 부실, 쓰다 만 소설 같아”…‘조폭 연루설’ 재차 비판",
+      "representativeUrl": "https://www.hani.co.kr/arti/politics/bluehouse/1251388.html",
+      "representativeKeywords": [
+        "대통령",
+        "스토리",
+        "부실"
+      ],
+      "articleCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "한겨레"
+      ],
+      "latestPubDate": "2026-03-27T01:33:58.842Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 25,
+        "keywordRepeatScore": 12,
+        "shortsFitScore": 3,
+        "briefPenalty": -8,
+        "finalScore": 37
+      },
+      "articles": [
+        {
+          "title": "이 대통령 “스토리 부실, 쓰다 만 소설 같아”…‘조폭 연루설’ 재차 비판",
+          "link": "https://www.hani.co.kr/arti/politics/bluehouse/1251388.html",
+          "description": "",
+          "pubDate": "2026-03-27T01:33:58.842Z",
+          "source": "한겨레"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    },
+    {
+      "rank": 3,
+      "clusterKeyword": "벨라루스",
+      "representativeTitle": "벨라루스 대통령, 김정은에 소총 선물… “적들 침공하면 사용해라”",
+      "representativeUrl": "https://www.chosun.com/politics/north_korea/2026/03/27/NAAKKRCIYFDA5PEIB55GZXJK6Y/",
+      "representativeKeywords": [
+        "벨라루스",
+        "대통령",
+        "김정은에"
+      ],
+      "articleCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "조선일보"
+      ],
+      "latestPubDate": "2026-03-26T22:41:13.000Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 23,
+        "keywordRepeatScore": 12,
+        "shortsFitScore": 5,
+        "briefPenalty": -8,
+        "finalScore": 37
+      },
+      "articles": [
+        {
+          "title": "벨라루스 대통령, 김정은에 소총 선물… “적들 침공하면 사용해라”",
+          "link": "https://www.chosun.com/politics/north_korea/2026/03/27/NAAKKRCIYFDA5PEIB55GZXJK6Y/",
+          "description": "",
+          "pubDate": "2026-03-26T22:41:13.000Z",
+          "source": "조선일보"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+{
+  "date": "2026-03-27",
+  "generatedAt": "2026-03-27T02:07:52.369Z",
+  "instructions": "userDecision 을 다음 중 하나로 변경 후 npm run political-feedback 실행: approved | rejected | conservative_positive | progressive_positive | mixed | unclear",
+  "totalItems": 33,
+  "items": [
+    {
+      "date": "2026-03-27",
+      "keyword": "대통령",
+      "title": "민주·국힘 정당 지지율, 대구서 동률…무당층 42% [갤럽]",
+      "autoClassification": "mixed",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수(10점) + 진보(15점) 혼재 — 양쪽 채널 참고 가능",
+      "evidenceKeywords": [
+        "국민의힘",
+        "보수",
+        "우파",
+        "안보",
+        "북한",
+        "민주당"
+      ],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "에너지",
+      "title": "산업부, 경제 6단체와 긴급 간담회…대체 공급선 발굴·에너지 절약 촉구",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "국회",
+      "title": "베트남 제16대 국회 제1차 회의, 국가 핵심 지도부 인선 정비 예정 - Thông tấn xã Việt Nam (TTXVN)",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "통역",
+      "title": "북미정상회담 통역 이연향 “김정은, 경험 부족에도 대응 뛰어나”",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "묘역",
+      "title": "천안함 용사 묘역 참배하는 이재명 대통령·김혜경 여사",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "김정은에",
+      "title": "시진핑도 ‘재추대’ 김정은에 축전…“중조 관계발전 고도로 중시”",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "소설",
+      "title": "이 대통령 “스토리 부실, 쓰다 만 소설 같아”…‘조폭 연루설’ 재차 비판",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "오늘의",
+      "title": "[오늘의 국회일정](27일·금) - 연합뉴스 한민족센터",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "진보 신호 1점 — 근거 불충분으로 불명확 처리",
+      "evidenceKeywords": [
+        "검찰개혁"
+      ],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "대한민국",
+      "title": "대한민국 청와대 - 대한민국 청와대",
+      "autoClassification": "progressive_positive",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "진보채널 적합 (키워드 0개 + 인물조합 2점)",
+      "evidenceKeywords": [
+        "이재명+정책"
+      ],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "복기왕",
+      "title": "복기왕, '사회연대경제기본법' 통과·아산 센터 개소…중앙·지역 동시...",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "진보 신호 1점 — 근거 불충분으로 불명확 처리",
+      "evidenceKeywords": [
+        "민주당"
+      ],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "주호영",
+      "title": "[뷰리핑] 주호영, 컷오프 가처분 신청",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "탄소중립",
+      "title": "경주 SMR 유치전 본격화…국회 포럼서 탄소중립 해법 논의 - 드림저널",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "오세훈",
+      "title": "오세훈 “18% 지지율로 어떻게 선거하나…빨간색 입게 해달라”",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "팔면",
+      "title": "\"대통령 팔면 나도 판다\"...장동혁, 주택 6채 중 4채 처분 - KBC광주방송",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "대통령과",
+      "title": "[대통령과 증시토론] 김학균 센터장이 대통령에 한 조언 - 데일리브리프",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "벨라루씨공화국",
+      "title": "벨라루씨공화국 대통령을 위한 환영공연 진행 - 조선신보",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "대한수의사회",
+      "title": "대한수의사회 신임 집행부 닻 올렸다 ‘국회 교두보 함께 만듭시다’ - 데일리벳",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "국회기후변화포럼",
+      "title": "국회기후변화포럼, ‘2026 기후변화 장학생’ 모집 - 전국매일신문",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "진보 신호 1점 — 근거 불충분으로 불명확 처리",
+      "evidenceKeywords": [
+        "기후변화"
+      ],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "한국어",
+      "title": "‘한국어 입과 귀’ 통번역국장 퇴임 “가장 진땀 빼게 한 美대통령은…” - 조선일보",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "5월",
+      "title": "5월 1일도 쉰다…법정공휴일 지정안 국회행안위 통과 - 문화일보",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "진보 신호 1점 — 근거 불충분으로 불명확 처리",
+      "evidenceKeywords": [
+        "노동"
+      ],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "최규하대통령",
+      "title": "(재)최규하대통령 기념사업회, 현석봉사단 발대식 개최 - 원주신문",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "초유의",
+      "title": "초유의 대법원장 탄핵 실현되나?…범여권, 도 넘은 사법부 겁박 도마에 - 데일리안",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "진보 신호 1점 — 근거 불충분으로 불명확 처리",
+      "evidenceKeywords": [
+        "탄핵"
+      ],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "스타트업",
+      "title": "금융보안원, ASM 공급 확대…보안 스타트업 타격 현실화",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "황정근",
+      "title": "황정근 국회도서관장, 국회부산도서관…4주년 기념 음악회 연다 - 로이슈",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "유시민",
+      "title": "유시민 “그사람은 李대통령에 해끼칠 것”…송영길 겨냥? - 문화일보",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "비영리법인",
+      "title": "‘비영리법인 허가제’ 위헌 쟁점 부상…헌재 심판 앞두고 국회 토론회 - 더나은미래",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "차량",
+      "title": "차량 5부제 단속 피해 국회·선관위 인근 ‘꼼수 주차’ - 채널A",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "장동민",
+      "title": "장동민 “가짜뉴스에 얼마나 시달렸으면···대통령께 얘기했겠나” - 경향신문",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "민주당의",
+      "title": "민주당의 국회 상임위 독식 시도, 한겨레도 “정당화될 순 없다” - 미디어오늘",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "진보 신호 1점 — 근거 불충분으로 불명확 처리",
+      "evidenceKeywords": [
+        "민주당"
+      ],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "국회입법조사처",
+      "title": "국회입법조사처 “2025년 해킹 대란, 첨단 기법 아닌 ‘보안 기본기’ 부실 탓” - 보안뉴스",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "대선",
+      "title": "'대선' 민주당에 쏠린 눈, 의대증원 어쩔 거냐 물었더니? - 의협신문",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "진보 신호 1점 — 근거 불충분으로 불명확 처리",
+      "evidenceKeywords": [
+        "민주당"
+      ],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "세한총연",
+      "title": "세한총연, 국회 청원사이트에 ‘재외선거 우편·전자투표 도입 청원글’ 올려 - 월드코리안뉴스",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    },
+    {
+      "date": "2026-03-27",
+      "keyword": "초중반",
+      "title": "'40% 초중반' 약가개편안에 국회 \"정부 재량의 몫\" - 약사공론",
+      "autoClassification": "unclear",
+      "autoReviewStatus": "review_needed",
+      "fitReason": "보수/진보 특징 키워드 없음 — 분류 불가",
+      "evidenceKeywords": [],
+      "personContextMatched": [],
+      "userDecision": "",
+      "note": ""
+    }
+  ]
+}

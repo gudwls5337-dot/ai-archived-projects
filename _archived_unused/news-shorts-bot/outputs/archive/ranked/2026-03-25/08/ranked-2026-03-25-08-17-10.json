@@ -1,0 +1,391 @@
+{
+  "rankedAt": "2026-03-25T23:17:10.371Z",
+  "totalIssues": 164,
+  "topN": 20,
+  "items": [
+    {
+      "rank": 1,
+      "clusterKeyword": "증가",
+      "representativeTitle": "이 대통령, 49억7천만원 신고…인세·ETF투자로 18억8천만원 증가",
+      "representativeUrl": "https://www.hani.co.kr/arti/politics/bluehouse/1251124.html",
+      "representativeKeywords": [
+        "증가",
+        "대통령",
+        "재산"
+      ],
+      "articleCount": 5,
+      "sourceCount": 4,
+      "sources": [
+        "한겨레",
+        "조선일보",
+        "전자신문",
+        "네이버뉴스"
+      ],
+      "latestPubDate": "2026-03-25T23:17:10.340Z",
+      "score": {
+        "sourceDiversityScore": 25,
+        "freshnessScore": 25,
+        "keywordRepeatScore": 25,
+        "shortsFitScore": 6,
+        "briefPenalty": 0,
+        "finalScore": 81
+      },
+      "articles": [
+        {
+          "title": "이 대통령, 49억7천만원 신고…인세·ETF투자로 18억8천만원 증가",
+          "link": "https://www.hani.co.kr/arti/politics/bluehouse/1251124.html",
+          "description": "",
+          "pubDate": "2026-03-25T23:17:10.340Z",
+          "source": "한겨레"
+        },
+        {
+          "title": "李대통령 재산 49억… 전년보다 18억 증가",
+          "link": "https://www.chosun.com/politics/blue_house/2026/03/26/T377FN3ETRD57EIIHVXMKZH65I/",
+          "description": "",
+          "pubDate": "2026-03-25T15:54:00.000Z",
+          "source": "조선일보"
+        },
+        {
+          "title": "증시 호황에 지난해 증권사 순이익 10조 육박...전년보다 38.9% 급증",
+          "link": "https://www.chosun.com/economy/money/2026/03/26/4OKGI2EJGFF5ZOJHLRSTPBY62Q/",
+          "description": "",
+          "pubDate": "2026-03-25T23:01:18.000Z",
+          "source": "조선일보"
+        },
+        {
+          "title": "증시 활황에…증권사 당기순이익 10조 달성",
+          "link": "https://www.etnews.com/20260325000358",
+          "description": "국내 증시 활황에 힘입어 지난해 증권회사 당기순이익이 약 10조원을 기록했다. 25일 금융감독원이 발표한 '2025년 증권·선물회사 영업실적'에 따르면 지난해 당기순이익은 전년 대비 38.9% 늘어난 9조6455억원을 기록했다. 특히 지난해 국내 증시 호황으로 주식 거",
+          "pubDate": "2026-03-25T21:00:00.000Z",
+          "source": "전자신문"
+        },
+        {
+          "title": "이창용 한은 총재, 10억 증가한 54.5억…금통위원 모두 재산 증가",
+          "link": "https://n.news.naver.com/mnews/article/277/0005740291?sid=101",
+          "originalLink": "https://view.asiae.co.kr/article/2026032608051350515",
+          "description": "특히 장용성 위원은 미국 빅테크 주식만 60억원어치 가까이 보유해 1년 사이 재산이 20억원 넘게 늘었다. 정부공직자윤리위원회가 25일 관보에 게재한 '2026년 공직자 정기 재산변동 신고사항'에 따르면 이...",
+          "pubDate": "2026-03-25T23:05:00.000Z",
+          "source": "네이버뉴스",
+          "category": "테크"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    },
+    {
+      "rank": 2,
+      "clusterKeyword": "이란",
+      "representativeTitle": "이란 외교장관 “미국이 전한 종전안 검토했으나 흥미 없다”",
+      "representativeUrl": "https://www.hani.co.kr/arti/international/international_general/1251146.html",
+      "representativeKeywords": [
+        "이란",
+        "종전안",
+        "외교장관"
+      ],
+      "articleCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "한겨레"
+      ],
+      "latestPubDate": "2026-03-25T23:17:10.340Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 25,
+        "keywordRepeatScore": 19,
+        "shortsFitScore": 6,
+        "briefPenalty": -5,
+        "finalScore": 50
+      },
+      "articles": [
+        {
+          "title": "이란 외교장관 “미국이 전한 종전안 검토했으나 흥미 없다”",
+          "link": "https://www.hani.co.kr/arti/international/international_general/1251146.html",
+          "description": "",
+          "pubDate": "2026-03-25T23:17:10.340Z",
+          "source": "한겨레"
+        },
+        {
+          "title": "“이란, 미 종전안 거절…‘침략 중단·피해 배상’ 역제안”",
+          "link": "https://www.hani.co.kr/arti/international/international_general/1251128.html",
+          "description": "",
+          "pubDate": "2026-03-25T23:17:10.340Z",
+          "source": "한겨레"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    },
+    {
+      "rank": 3,
+      "clusterKeyword": "오늘의",
+      "representativeTitle": "【오늘의 국회일정】 2026년 3월 26일",
+      "representativeUrl": "https://www.lawtimes.co.kr/news/articleView.html?idxno=218347",
+      "representativeKeywords": [
+        "오늘의",
+        "국회일정",
+        "2026년"
+      ],
+      "articleCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "네이버뉴스"
+      ],
+      "latestPubDate": "2026-03-25T22:30:00.000Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 25,
+        "keywordRepeatScore": 12,
+        "shortsFitScore": 9,
+        "briefPenalty": -8,
+        "finalScore": 43
+      },
+      "articles": [
+        {
+          "title": "【오늘의 국회일정】 2026년 3월 26일",
+          "link": "https://www.lawtimes.co.kr/news/articleView.html?idxno=218347",
+          "originalLink": "https://www.lawtimes.co.kr/news/articleView.html?idxno=218347",
+          "description": "벤처·스타트업 성장포럼: AI 실용화 시대, 벤처·스타트업의 스케일업 전략(의원회관 제1간담회의실) 10:00 민병덕 의원실 등, 토큰증권 법제화 이후 자본시장의 구조 변화와 제도적 과제(의원회관 신관...",
+          "pubDate": "2026-03-25T22:30:00.000Z",
+          "source": "네이버뉴스",
+          "category": "스타트업"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    },
+    {
+      "rank": 4,
+      "clusterKeyword": "국회의원",
+      "representativeTitle": "국회의원 50명 서울 ‘강남 3구’ 부동산 보유",
+      "representativeUrl": "https://www.hani.co.kr/arti/politics/politics_general/1251126.html",
+      "representativeKeywords": [
+        "국회의원",
+        "50명",
+        "서울"
+      ],
+      "articleCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "한겨레"
+      ],
+      "latestPubDate": "2026-03-25T23:17:10.340Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 25,
+        "keywordRepeatScore": 12,
+        "shortsFitScore": 8,
+        "briefPenalty": -8,
+        "finalScore": 42
+      },
+      "articles": [
+        {
+          "title": "국회의원 50명 서울 ‘강남 3구’ 부동산 보유",
+          "link": "https://www.hani.co.kr/arti/politics/politics_general/1251126.html",
+          "description": "",
+          "pubDate": "2026-03-25T23:17:10.340Z",
+          "source": "한겨레"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    },
+    {
+      "rank": 5,
+      "clusterKeyword": "사회적",
+      "representativeTitle": "첫 사회적 대화에서 ‘쉬운 해고’ 꺼낸 대통령 [뉴스룸에서]",
+      "representativeUrl": "https://www.hani.co.kr/arti/opinion/column/1251140.html",
+      "representativeKeywords": [
+        "사회적",
+        "대화에서",
+        "쉬운"
+      ],
+      "articleCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "한겨레"
+      ],
+      "latestPubDate": "2026-03-25T23:17:10.340Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 25,
+        "keywordRepeatScore": 12,
+        "shortsFitScore": 6,
+        "briefPenalty": -8,
+        "finalScore": 40
+      },
+      "articles": [
+        {
+          "title": "첫 사회적 대화에서 ‘쉬운 해고’ 꺼낸 대통령 [뉴스룸에서]",
+          "link": "https://www.hani.co.kr/arti/opinion/column/1251140.html",
+          "description": "",
+          "pubDate": "2026-03-25T23:17:10.340Z",
+          "source": "한겨레"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    },
+    {
+      "rank": 6,
+      "clusterKeyword": "판결은",
+      "representativeTitle": "“李 판결은 사법 쿠데타”라는 與 조희대 탄핵안",
+      "representativeUrl": "https://www.chosun.com/politics/assembly/2026/03/26/SQV3J7CT3ZHJNL4HFJU4G3IRDE/",
+      "representativeKeywords": [
+        "판결은",
+        "사법",
+        "쿠데타"
+      ],
+      "articleCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "조선일보"
+      ],
+      "latestPubDate": "2026-03-25T15:50:00.000Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 18,
+        "keywordRepeatScore": 12,
+        "shortsFitScore": 8,
+        "briefPenalty": -8,
+        "finalScore": 35
+      },
+      "articles": [
+        {
+          "title": "“李 판결은 사법 쿠데타”라는 與 조희대 탄핵안",
+          "link": "https://www.chosun.com/politics/assembly/2026/03/26/SQV3J7CT3ZHJNL4HFJU4G3IRDE/",
+          "description": "",
+          "pubDate": "2026-03-25T15:50:00.000Z",
+          "source": "조선일보"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    },
+    {
+      "rank": 7,
+      "clusterKeyword": "푸틴식",
+      "representativeTitle": "“푸틴식 대통령 임기 연장 꿈꾸나”…여권 개헌론을 둘러싼 음모론",
+      "representativeUrl": "https://www.chosun.com/politics/politics_general/2026/03/26/WN3KSAP4NRE2RJWNHWBHK7ELP4/",
+      "representativeKeywords": [
+        "푸틴식",
+        "대통령",
+        "임기"
+      ],
+      "articleCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "조선일보"
+      ],
+      "latestPubDate": "2026-03-25T18:00:00.000Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 20,
+        "keywordRepeatScore": 12,
+        "shortsFitScore": 5,
+        "briefPenalty": -8,
+        "finalScore": 34
+      },
+      "articles": [
+        {
+          "title": "“푸틴식 대통령 임기 연장 꿈꾸나”…여권 개헌론을 둘러싼 음모론",
+          "link": "https://www.chosun.com/politics/politics_general/2026/03/26/WN3KSAP4NRE2RJWNHWBHK7ELP4/",
+          "description": "",
+          "pubDate": "2026-03-25T18:00:00.000Z",
+          "source": "조선일보"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    },
+    {
+      "rank": 8,
+      "clusterKeyword": "차량",
+      "representativeTitle": "차량 5부제 단속 피해… 국회·선관위 청사 인근에 차 대고 출근",
+      "representativeUrl": "https://www.chosun.com/national/national_general/2026/03/26/2QQS6H4HSFB4VPEASC5OOTSAIA/",
+      "representativeKeywords": [
+        "차량",
+        "5부제",
+        "단속"
+      ],
+      "articleCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "조선일보"
+      ],
+      "latestPubDate": "2026-03-25T15:47:00.000Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 18,
+        "keywordRepeatScore": 12,
+        "shortsFitScore": 5,
+        "briefPenalty": -8,
+        "finalScore": 32
+      },
+      "articles": [
+        {
+          "title": "차량 5부제 단속 피해… 국회·선관위 청사 인근에 차 대고 출근",
+          "link": "https://www.chosun.com/national/national_general/2026/03/26/2QQS6H4HSFB4VPEASC5OOTSAIA/",
+          "description": "",
+          "pubDate": "2026-03-25T15:47:00.000Z",
+          "source": "조선일보"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    },
+    {
+      "rank": 9,
+      "clusterKeyword": "KF",
+      "representativeTitle": "'KF-21 1호기' 지켜본 李대통령 “자주국방 염원 담겨…방산에 투자 아끼지 않을 것”",
+      "representativeUrl": "https://www.etnews.com/20260325000366",
+      "representativeKeywords": [
+        "KF",
+        "1호기",
+        "지켜본"
+      ],
+      "articleCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "전자신문"
+      ],
+      "latestPubDate": "2026-03-25T06:21:00.000Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 8,
+        "keywordRepeatScore": 12,
+        "shortsFitScore": 0,
+        "briefPenalty": -8,
+        "finalScore": 17
+      },
+      "articles": [
+        {
+          "title": "'KF-21 1호기' 지켜본 李대통령 “자주국방 염원 담겨…방산에 투자 아끼지 않을 것”",
+          "link": "https://www.etnews.com/20260325000366",
+          "description": "이재명 대통령이 국산 기술로 개발된 KF-21의 첫 번째 기체 출고를 지켜본 뒤 '자주국방'을 강조했다. 아울러 방위 산업 육성을 위한 지원을 늘리겠다고 약속했다. 이 대통령은 25일 경남 사천시 한국항공우주산업 본사에서 열린 'KF-21 양산 1호기 출고식'에서 “정",
+          "pubDate": "2026-03-25T06:21:00.000Z",
+          "source": "전자신문"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    }
+  ]
+}

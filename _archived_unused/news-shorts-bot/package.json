@@ -1,0 +1,41 @@
+{
+  "name": "news-shorts-bot",
+  "version": "1.0.0",
+  "description": "뉴스를 수집해서 숏츠용 콘텐츠로 변환하는 봇",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev":            "ts-node src/index.ts",
+    "today":          "ts-node src/generators/generateTodayFile.ts",
+    "validate-final": "ts-node src/generators/validateFinalCsv.ts",
+    "gen-select":     "ts-node src/generators/generateSelectedExport.ts",
+    "gen-publish":    "ts-node src/generators/generatePublishExport.ts",
+    "publish-report": "ts-node src/generators/generatePublishReport.ts",
+    "report":         "ts-node -e \"require('./src/generators/generateReport').generateReportFromFile()\"",
+    "final":          "ts-node -e \"require('./src/generators/generateFinalExport').generateFinalFromFile()\"",
+    "collect":        "ts-node src/pipelines/morningRun.ts",
+    "schedule":       "ts-node src/scheduler.ts",
+    "auto-run":       "ts-node src/scheduler.ts",
+    "political":          "ts-node src/pipelines/politicalResearchRun.ts",
+    "political-verify":   "ts-node src/pipelines/politicalVerifyRun.ts",
+    "political-feedback": "ts-node src/pipelines/politicalFeedbackRun.ts",
+    "political-schedule": "ts-node src/schedulerPolitical.ts",
+    "build":          "tsc",
+    "start":          "node dist/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "exceljs": "^4.4.0",
+    "node-cron": "^3.0.3",
+    "rss-parser": "^3.13.0"
+  },
+  "optionalDependencies": {
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/node-cron": "^3.0.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.2"
+  }
+}

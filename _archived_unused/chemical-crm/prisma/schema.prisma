@@ -1,0 +1,149 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Company {
+  id            String        @id @default(cuid())
+  name          String
+  country       String
+  segment       Segment
+  pipelineStage PipelineStage
+  source        String?       // 유입 출처: exhibition, abm, manual, inbound, referral, existing_client, exhibition_import, abm_import
+  salesStatus   String?       // 영업 상태: 신규, 1차발송, 2차예정, 회신옴, 관심있음, 미응답, 제외, 거래중, 보류
+  tags          String[]      // 업체 분류 태그: 필터여과지, HVAC, 냉동공조, 디스트리뷰터, OEM 등
+  createdAt     DateTime      @default(now())
+  contacts      Contact[]
+  mailLogs      MailLog[]
+}
+
+model Contact {
+  id                   String                      @id @default(cuid())
+  companyId            String
+  name                 String
+  email                String
+  title                String?
+  hasReplied           Boolean                     @default(false)
+  excludedFromSending  Boolean                     @default(false)
+  duplicateOfContactId String?
+  createdAt            DateTime                    @default(now())
+  company              Company                     @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  enrollments          ContactSequenceEnrollment[]
+  mailLogs             MailLog[]
+}
+
+model MailLog {
+  id             String        @id @default(cuid())
+  to             String
+  subject        String
+  text           String
+  status         MailStatus
+  createdAt      DateTime      @default(now())
+  sentAt         DateTime?
+  // Relations
+  contactId      String?
+  companyId      String?
+  sequenceId     String?
+  sequenceStepId String?
+  // Open tracking
+  openedAt       DateTime?
+  lastOpenedAt   DateTime?
+  openCount      Int           @default(0)
+  // IMAP 아카이브 추적
+  archivedAt     DateTime?
+  // 발송 실패 사유 (FAILED 건에만 기록): invalid_email | dns_or_host_not_found | smtp_auth_error | mailbox_unavailable | unknown
+  failReason     String?
+  // Relations
+  contact        Contact?      @relation(fields: [contactId], references: [id])
+  company        Company?      @relation(fields: [companyId], references: [id])
+  sequence       Sequence?     @relation(fields: [sequenceId], references: [id])
+  sequenceStep   SequenceStep? @relation(fields: [sequenceStepId], references: [id])
+}
+
+model Sequence {
+  id          String                      @id @default(cuid())
+  name        String
+  description String?
+  createdAt   DateTime                    @default(now())
+  enrollments ContactSequenceEnrollment[]
+  steps       SequenceStep[]
+  mailLogs    MailLog[]
+}
+
+model SequenceStep {
+  id         String       @id @default(cuid())
+  sequenceId String
+  stepOrder  Int
+  subject    String
+  body       String
+  delayDays  Int          @default(0)
+  createdAt  DateTime     @default(now())
+  sequence   Sequence     @relation(fields: [sequenceId], references: [id], onDelete: Cascade)
+  mailLogs   MailLog[]
+}
+
+model ContactSequenceEnrollment {
+  id          String       @id @default(cuid())
+  contactId   String
+  sequenceId  String
+  currentStep Int          @default(1)
+  status      EnrollStatus @default(ACTIVE)
+  enrolledAt  DateTime     @default(now())
+  lastSentAt  DateTime?
+  contact     Contact      @relation(fields: [contactId], references: [id], onDelete: Cascade)
+  sequence    Sequence     @relation(fields: [sequenceId], references: [id], onDelete: Cascade)
+}
+
+model MailQueue {
+  id            String    @id @default(cuid())
+  status        String    @default("pending") // pending | processing | completed | cancelled
+  label         String?
+  subject       String
+  body          String
+  contactIds    String    // JSON: string[]
+  totalCount    Int
+  sentCount     Int       @default(0)
+  failedCount   Int       @default(0)
+  batchSize     Int       @default(30)
+  batchDelayMin Int       @default(5)
+  nextBatchAt   DateTime  @default(now())
+  createdAt     DateTime  @default(now())
+  completedAt   DateTime?
+}
+
+model Unsubscribe {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  reason    String?
+  createdAt DateTime @default(now())
+}
+
+enum Segment {
+  exhibition_booth
+  tendata_volume
+  distributor_by_country
+  met_in_person
+  inbound
+}
+
+enum PipelineStage {
+  NEW
+  CONTACTED
+  PROPOSED
+  CONTRACTED
+}
+
+enum MailStatus {
+  SUCCESS
+  FAILED
+}
+
+enum EnrollStatus {
+  ACTIVE
+  PAUSED
+  COMPLETED
+}

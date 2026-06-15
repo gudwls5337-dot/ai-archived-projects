@@ -1,0 +1,59 @@
+[
+  {
+    "date": "2026-03-27",
+    "keyword": "에너지",
+    "title": "산업부, 에너지 정책 발표",
+    "autoClassification": "unclear",
+    "autoReviewStatus": "review_needed",
+    "fitReason": "보수/진보 특징 키워드 없음",
+    "evidenceKeywords": [],
+    "personContextMatched": [],
+    "userDecision": "conservative_positive",
+    "note": "에너지 안보 이슈 — 보수 채널 적합",
+    "savedAt": "2026-03-27T02:07:46.265Z"
+  },
+  {
+    "date": "2026-03-27",
+    "keyword": "국회",
+    "title": "국회 일정",
+    "autoClassification": "unclear",
+    "autoReviewStatus": "review_needed",
+    "fitReason": "키워드 없음",
+    "evidenceKeywords": [],
+    "personContextMatched": [],
+    "userDecision": "rejected",
+    "note": "정치 이슈 아님",
+    "savedAt": "2026-03-27T02:07:46.267Z"
+  },
+  {
+    "date": "2026-03-27",
+    "keyword": "정청래",
+    "title": "정청래 발언",
+    "autoClassification": "progressive_positive",
+    "autoReviewStatus": "approved",
+    "fitReason": "진보 신호 우세",
+    "evidenceKeywords": [
+      "보수",
+      "민주당"
+    ],
+    "personContextMatched": [
+      "이재명+지지"
+    ],
+    "userDecision": "approved",
+    "note": "",
+    "savedAt": "2026-03-27T02:07:46.267Z"
+  },
+  {
+    "date": "2026-03-27",
+    "keyword": "통역",
+    "title": "북미정상회담 통역",
+    "autoClassification": "unclear",
+    "autoReviewStatus": "review_needed",
+    "fitReason": "키워드 없음",
+    "evidenceKeywords": [],
+    "personContextMatched": [],
+    "userDecision": "conservative_positive",
+    "note": "북한/안보 이슈",
+    "savedAt": "2026-03-27T02:07:46.267Z"
+  }
+]

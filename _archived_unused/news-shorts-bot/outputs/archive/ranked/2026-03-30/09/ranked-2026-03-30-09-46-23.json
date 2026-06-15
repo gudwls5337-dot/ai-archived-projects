@@ -1,0 +1,333 @@
+{
+  "rankedAt": "2026-03-30T00:46:24.238Z",
+  "totalIssues": 171,
+  "topN": 20,
+  "items": [
+    {
+      "rank": 1,
+      "clusterKeyword": "단독",
+      "representativeTitle": "[단독] 송상교 진화위원장 “이 대통령, 과거사 전반에 ‘총체적 사과’해야”",
+      "representativeUrl": "https://www.hani.co.kr/arti/society/society_general/1251669.html",
+      "representativeKeywords": [
+        "단독",
+        "사과",
+        "송상교"
+      ],
+      "articleCount": 2,
+      "sourceCount": 2,
+      "sources": [
+        "한겨레",
+        "조선일보"
+      ],
+      "latestPubDate": "2026-03-30T00:46:24.182Z",
+      "score": {
+        "sourceDiversityScore": 11,
+        "freshnessScore": 25,
+        "keywordRepeatScore": 19,
+        "shortsFitScore": 18,
+        "briefPenalty": -5,
+        "finalScore": 68
+      },
+      "articles": [
+        {
+          "title": "[단독] 송상교 진화위원장 “이 대통령, 과거사 전반에 ‘총체적 사과’해야”",
+          "link": "https://www.hani.co.kr/arti/society/society_general/1251669.html",
+          "description": "",
+          "pubDate": "2026-03-30T00:46:24.182Z",
+          "source": "한겨레"
+        },
+        {
+          "title": "[단독] 천안함 유족 “北 사과 받아달라”... 李 “사과하란다고 하겠습니까”",
+          "link": "https://www.chosun.com/politics/blue_house/2026/03/27/4KL6XIBK7RFSDEXTWO7PWAYI6U/",
+          "description": "",
+          "pubDate": "2026-03-27T10:45:15.000Z",
+          "source": "조선일보"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    },
+    {
+      "rank": 2,
+      "clusterKeyword": "대통령",
+      "representativeTitle": "李대통령 지지도 3주 연속 60%대 기록… 국힘 30%대 재진입[리얼미터]",
+      "representativeUrl": "https://www.chosun.com/economy/economy_general/2026/03/30/G5SDEYRZMI2TAMZWGIZTQZLFHE/",
+      "representativeKeywords": [
+        "대통령",
+        "국힘",
+        "리얼미터"
+      ],
+      "articleCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "조선일보"
+      ],
+      "latestPubDate": "2026-03-30T00:12:04.000Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 25,
+        "keywordRepeatScore": 19,
+        "shortsFitScore": 3,
+        "briefPenalty": 0,
+        "finalScore": 52
+      },
+      "articles": [
+        {
+          "title": "李대통령 지지율 62.2%… 민주 51.1% 국힘 30.6% [리얼미터]",
+          "link": "https://www.chosun.com/politics/opinion-poll/2026/03/30/7ZBF4A6HBRBJ3MDRMSSJJK3RLM/",
+          "description": "",
+          "pubDate": "2026-03-29T23:36:55.000Z",
+          "source": "조선일보"
+        },
+        {
+          "title": "李대통령 지지도 3주 연속 60%대 기록… 국힘 30%대 재진입[리얼미터]",
+          "link": "https://www.chosun.com/economy/economy_general/2026/03/30/G5SDEYRZMI2TAMZWGIZTQZLFHE/",
+          "description": "이재명 대통령의 국정수행 지지도가 3주 연속 60%대를 기록했다는 여론조사 결과가 30일 나왔다. 리얼미터가 에너지경제신문 의뢰로 지난 23∼27일 전국 18세 이상 2513명을 대상으로 조사한 결과 이 대통령의 국정수행에 대한 긍정 평가는 지난주와 같은 62.2%로 집계됐다. 부정 평가는 지난주 대비 0.3%포인트(p) 하락한 32.2%를 기록했다. ‘잘",
+          "pubDate": "2026-03-30T00:12:04.000Z",
+          "source": "조선일보"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": 1,
+      "duplicateLevel": "near-duplicate",
+      "isNearDuplicate": false
+    },
+    {
+      "rank": 3,
+      "clusterKeyword": "트럼프",
+      "representativeTitle": "트럼프 AI 정책 지지 '1억 불' 단체 등장… 美 중간선거 판도 흔든다",
+      "representativeUrl": "https://www.etnews.com/20260330000003",
+      "representativeKeywords": [
+        "트럼프",
+        "AI",
+        "정책"
+      ],
+      "articleCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "전자신문"
+      ],
+      "latestPubDate": "2026-03-29T21:37:04.000Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 23,
+        "keywordRepeatScore": 12,
+        "shortsFitScore": 18,
+        "briefPenalty": -8,
+        "finalScore": 50
+      },
+      "articles": [
+        {
+          "title": "트럼프 AI 정책 지지 '1억 불' 단체 등장… 美 중간선거 판도 흔든다",
+          "link": "https://www.etnews.com/20260330000003",
+          "description": "오는 11월 미국 중간선거를 앞두고 도널드 트럼프 행정부의 인공지능(AI) 정책을 지지하는 거대 정치자금 모금 단체가 등장했다. 미 온라인매체 악시오스는 29일(현지시간) '이노베이션 카운슬 액션'이라는 비영리 단체가 트럼프 행정부의 AI 규제 완화와 인프라 조기 구축",
+          "pubDate": "2026-03-29T21:37:04.000Z",
+          "source": "전자신문"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    },
+    {
+      "rank": 4,
+      "clusterKeyword": "안녕",
+      "representativeTitle": "“그날의 기억 떠올라 괴로워도 용기 내 신청해달라” [안녕 진화위㉔]",
+      "representativeUrl": "https://www.hani.co.kr/arti/society/society_general/1251675.html",
+      "representativeKeywords": [
+        "안녕",
+        "진화위㉔",
+        "그날의"
+      ],
+      "articleCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "한겨레"
+      ],
+      "latestPubDate": "2026-03-30T00:46:24.182Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 25,
+        "keywordRepeatScore": 19,
+        "shortsFitScore": 3,
+        "briefPenalty": -5,
+        "finalScore": 47
+      },
+      "articles": [
+        {
+          "title": "“그날의 기억 떠올라 괴로워도 용기 내 신청해달라” [안녕 진화위㉔]",
+          "link": "https://www.hani.co.kr/arti/society/society_general/1251675.html",
+          "description": "",
+          "pubDate": "2026-03-30T00:46:24.182Z",
+          "source": "한겨레"
+        },
+        {
+          "title": "“죄송하다, 잘해보겠다…대통령의 몇 마디 사과는 큰 의미” [안녕 진화위㉔]",
+          "link": "https://www.hani.co.kr/arti/society/society_general/1251668.html",
+          "description": "",
+          "pubDate": "2026-03-30T00:46:24.182Z",
+          "source": "한겨레"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    },
+    {
+      "rank": 5,
+      "clusterKeyword": "서울시립대학교",
+      "representativeTitle": "서울시립대학교 박훈 교수, 국회 「지역균형발전을 위한 주거혁신 정책포럼」 연구위원장으로 참여",
+      "representativeUrl": "https://www.hani.co.kr/arti/economy/biznews/1251681.html",
+      "representativeKeywords": [
+        "서울시립대학교",
+        "박훈",
+        "교수"
+      ],
+      "articleCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "한겨레"
+      ],
+      "latestPubDate": "2026-03-30T00:46:24.182Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 25,
+        "keywordRepeatScore": 12,
+        "shortsFitScore": 0,
+        "briefPenalty": -8,
+        "finalScore": 34
+      },
+      "articles": [
+        {
+          "title": "서울시립대학교 박훈 교수, 국회 「지역균형발전을 위한 주거혁신 정책포럼」 연구위원장으로 참여",
+          "link": "https://www.hani.co.kr/arti/economy/biznews/1251681.html",
+          "description": "",
+          "pubDate": "2026-03-30T00:46:24.182Z",
+          "source": "한겨레"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    },
+    {
+      "rank": 6,
+      "clusterKeyword": "국회예산정책처",
+      "representativeTitle": "국회예산정책처 “중동 전쟁 장기화 시 성장률 최대 0.5%p 깎여 1.5%”",
+      "representativeUrl": "https://www.chosun.com/economy/economy_general/2026/03/27/GIJS2ZVGZ5A3JH6YOLFRJHIO2E/",
+      "representativeKeywords": [
+        "국회예산정책처",
+        "중동",
+        "전쟁"
+      ],
+      "articleCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "조선일보"
+      ],
+      "latestPubDate": "2026-03-27T10:06:49.000Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 0,
+        "keywordRepeatScore": 12,
+        "shortsFitScore": 18,
+        "briefPenalty": -8,
+        "finalScore": 27
+      },
+      "articles": [
+        {
+          "title": "국회예산정책처 “중동 전쟁 장기화 시 성장률 최대 0.5%p 깎여 1.5%”",
+          "link": "https://www.chosun.com/economy/economy_general/2026/03/27/GIJS2ZVGZ5A3JH6YOLFRJHIO2E/",
+          "description": "",
+          "pubDate": "2026-03-27T10:06:49.000Z",
+          "source": "조선일보"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    },
+    {
+      "rank": 7,
+      "clusterKeyword": "제주",
+      "representativeTitle": "'제주' 찾은 李대통령 “국가 폭력 범죄 민·형사 공소시효 폐지할 것”",
+      "representativeUrl": "https://www.etnews.com/20260329000060",
+      "representativeKeywords": [
+        "제주",
+        "찾은",
+        "李대통령"
+      ],
+      "articleCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "전자신문"
+      ],
+      "latestPubDate": "2026-03-29T05:20:24.000Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 5,
+        "keywordRepeatScore": 12,
+        "shortsFitScore": 4,
+        "briefPenalty": -8,
+        "finalScore": 18
+      },
+      "articles": [
+        {
+          "title": "'제주' 찾은 李대통령 “국가 폭력 범죄 민·형사 공소시효 폐지할 것”",
+          "link": "https://www.etnews.com/20260329000060",
+          "description": "이재명 대통령이 4·3 추념식에 앞서 제주도를 찾아 국가 폭력 범죄의 민·형사 공소시효를 없애겠다고 약속했다. 이 대통령은 29일 제주도에서 열린 4.3 희생자 유족과의 오찬에서 “국가 폭력 범죄에 대한 공소시효, 소멸시효를 완전히 배제해서 살아있는 한 형사 책임을 끝",
+          "pubDate": "2026-03-29T05:20:24.000Z",
+          "source": "전자신문"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": null,
+      "duplicateLevel": "none",
+      "isNearDuplicate": false
+    },
+    {
+      "rank": 8,
+      "clusterKeyword": "대통령",
+      "representativeTitle": "李대통령, ‘서강대교 넘지말라’ 지휘한 조성현 대령 만나 “보고싶었다”",
+      "representativeUrl": "https://www.chosun.com/politics/politics_general/2026/03/27/6JF4CQSYDBH2DEYFZPAG563H7I/",
+      "representativeKeywords": [
+        "대통령",
+        "서강대교",
+        "넘지말라"
+      ],
+      "articleCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "조선일보"
+      ],
+      "latestPubDate": "2026-03-27T09:13:39.000Z",
+      "score": {
+        "sourceDiversityScore": 5,
+        "freshnessScore": 0,
+        "keywordRepeatScore": 12,
+        "shortsFitScore": 4,
+        "briefPenalty": -8,
+        "finalScore": 13
+      },
+      "articles": [
+        {
+          "title": "李대통령, ‘서강대교 넘지말라’ 지휘한 조성현 대령 만나 “보고싶었다”",
+          "link": "https://www.chosun.com/politics/politics_general/2026/03/27/6JF4CQSYDBH2DEYFZPAG563H7I/",
+          "description": "",
+          "pubDate": "2026-03-27T09:13:39.000Z",
+          "source": "조선일보"
+        }
+      ],
+      "commentMeta": null,
+      "duplicateGroupId": 1,
+      "duplicateLevel": "near-duplicate",
+      "isNearDuplicate": true
+    }
+  ]
+}
