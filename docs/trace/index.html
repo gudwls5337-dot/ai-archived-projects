@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>흔적 감지기</title>
+</head>
+<body>
+<style>
+  /* Layout: dark tactical single-screen scanner — sticky header, big action button, live device list */
+  :root{
+    --bg:#0a0e14; --panel:#121823; --panel-2:#1a2230; --line:#263040;
+    --fg:#e6edf5; --dim:#8a97a8; --accent:#3dd6c4; --accent-dim:#16544e;
+    --warn:#ff5d5d; --warn-dim:#4a1c1c; --ok:#4ad07a; --mid:#f0b64a;
+    color-scheme:dark;
+    font-family:-apple-system,"Segoe UI",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--bg);color:var(--fg);margin:0;
+    padding-left:max(16px,env(safe-area-inset-left,0px));
+    padding-right:max(16px,env(safe-area-inset-right,0px));
+    padding-block:0 28px;max-width:640px;margin-inline:auto}
+  body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+  header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;
+    padding-block:14px 10px;border-bottom:1px solid var(--line)}
+  h1{font-size:1.15rem;margin:0;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--dim);flex:none}
+  .dot.live{background:var(--ok);box-shadow:0 0 10px var(--ok);animation:pulse 1.2s infinite}
+  @keyframes pulse{50%{opacity:.35}}
+  .sub{color:var(--dim);font-size:.72rem;margin-top:3px}
+  .stats{display:flex;gap:8px;margin-top:12px}
+  .stat{flex:1;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:9px 6px;text-align:center}
+  .stat b{display:block;font-size:1.3rem;font-variant-numeric:tabular-nums}
+  .stat span{font-size:.62rem;color:var(--dim);letter-spacing:.3px}
+  .stat.warn b{color:var(--warn)}
+  .stat.new b{color:var(--mid)}
+  button.scan{width:100%;margin-top:12px;padding:15px;border:0;border-radius:12px;
+    background:var(--accent);color:#04201c;font-size:1.05rem;font-weight:700;letter-spacing:.5px}
+  button.scan.on{background:var(--warn-dim);color:var(--warn);border:1px solid var(--warn)}
+  button.scan:active{transform:scale(.99)}
+  .note{background:var(--panel-2);border:1px solid var(--line);border-radius:10px;
+    padding:12px;margin-top:12px;font-size:.78rem;color:var(--dim);line-height:1.5}
+  .note b{color:var(--mid)}
+  .note code{background:#0003;padding:2px 5px;border-radius:4px;color:var(--accent);font-size:.9em}
+  ul{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-direction:column;gap:8px}
+  li{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--line);
+    border-radius:10px;padding:11px 12px;transition:border-color .3s}
+  li.alert{border-left-color:var(--warn);background:linear-gradient(90deg,var(--warn-dim),var(--panel) 60%)}
+  li.stale{opacity:.4}
+  .row1{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+  .name{font-weight:600;font-size:.95rem;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .name.unknown{color:var(--dim);font-style:italic;font-weight:500}
+  .tag{font-size:.58rem;background:var(--warn);color:#fff;padding:2px 6px;border-radius:5px;flex:none;letter-spacing:.3px}
+  .tag.newtag{background:var(--mid);color:#201600}
+  .rssi{font-variant-numeric:tabular-nums;font-size:.82rem;color:var(--accent);flex:none}
+  .bar{height:5px;background:var(--line);border-radius:3px;margin-top:9px;overflow:hidden}
+  .bar i{display:block;height:100%;background:var(--accent);border-radius:3px;transition:width .4s}
+  .meta{display:flex;justify-content:space-between;margin-top:7px;font-size:.66rem;color:var(--dim);font-variant-numeric:tabular-nums}
+  .empty{text-align:center;color:var(--dim);padding:40px 10px;font-size:.85rem;line-height:1.6}
+</style>
+
+<header>
+  <h1><span class="dot" id="dot"></span>흔적 감지기 <span style="font-size:.6rem;color:var(--dim);font-weight:400">BLE</span></h1>
+  <div class="sub">주변 무선 신호(블루투스) 장치를 실시간 탐지 · 훈련용</div>
+  <div class="stats">
+    <div class="stat"><b id="n-total">0</b><span>탐지 장치</span></div>
+    <div class="stat new"><b id="n-new">0</b><span>신규</span></div>
+    <div class="stat warn"><b id="n-warn">0</b><span>주의</span></div>
+  </div>
+  <button class="scan" id="btn">▶ 탐지 시작</button>
+</header>
+
+<div id="msg"></div>
+<ul id="list"></ul>
+<div class="empty" id="empty">탐지를 시작하면 주변 장치가<br>가까운 순서로 나타납니다.</div>
+
+<script>
+const GLASS = ["glass","meta","ray-ban","rayban","spectacles","xreal","rokid","viture","even realities","g1","frame","inmo","nreal","vuzix","cam","gopro","hidden","spy"];
+const btn=document.getElementById('btn'), dot=document.getElementById('dot'),
+      list=document.getElementById('list'), empty=document.getElementById('empty'), msg=document.getElementById('msg');
+let scan=null, devices=new Map(), t0=0, ac=null;
+
+function dist(rssi){const d=Math.pow(10,(-59-rssi)/20);return d<1?"<1m":d<2?"~1m":d<4?"~"+Math.round(d)+"m":d<10?"~"+Math.round(d)+"m":">10m";}
+function pct(rssi){return Math.max(4,Math.min(100,Math.round((rssi+100)*1.6)));}
+function isGlass(n){n=(n||"").toLowerCase();return GLASS.some(k=>n.includes(k));}
+function beep(){try{ac=ac||new(window.AudioContext||webkitAudioContext)();const o=ac.createOscillator(),g=ac.createGain();o.connect(g);g.connect(ac.destination);o.frequency.value=880;g.gain.value=.08;o.start();o.stop(ac.currentTime+.12);}catch(e){}}
+
+function render(){
+  const now=Date.now(), arr=[...devices.values()].sort((a,b)=>b.rssi-a.rssi);
+  let nw=0,wn=0;
+  empty.hidden=arr.length>0;
+  list.innerHTML=arr.map(d=>{
+    const isNew=d.first>t0+1500, glass=isGlass(d.name), stale=now-d.last>10000;
+    if(isNew)nw++; if(glass)wn++;
+    const nm=d.name?`<span class="name">${esc(d.name)}</span>`:`<span class="name unknown">미상 장치</span>`;
+    return `<li class="${glass?'alert':''} ${stale?'stale':''}">
+      <div class="row1">${nm}<span class="rssi">${d.rssi} dBm</span></div>
+      <div class="bar"><i style="width:${pct(d.rssi)}%;background:${glass?'var(--warn)':'var(--accent)'}"></i></div>
+      <div class="meta">
+        <span>${glass?'<span class="tag">⚠ 안경·카메라류</span> ':''}${isNew?'<span class="tag newtag">NEW</span> ':''}거리 ${dist(d.rssi)}</span>
+        <span>처음 ${new Date(d.first).toLocaleTimeString('ko-KR',{hour12:false})}</span>
+      </div></li>`;
+  }).join('');
+  document.getElementById('n-total').textContent=arr.length;
+  document.getElementById('n-new').textContent=nw;
+  document.getElementById('n-warn').textContent=wn;
+}
+function esc(s){return s.replace(/[<>&]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));}
+
+async function start(){
+  if(!navigator.bluetooth||!navigator.bluetooth.requestLEScan){
+    msg.innerHTML=`<div class="note"><b>이 브라우저는 실시간 스캔 미지원.</b><br>
+    안드로이드 <b>크롬</b>에서 열고, 주소창에 <code>chrome://flags</code> → <b>Experimental Web Platform features</b> 를 켠 뒤 다시 여세요.
+    (아이폰은 OS 제한으로 이 기능을 지원하지 않습니다.)</div>`;
+    return;
+  }
+  try{
+    scan=await navigator.bluetooth.requestLEScan({acceptAllAdvertisements:true});
+    t0=Date.now(); msg.innerHTML='';
+    navigator.bluetooth.addEventListener('advertisementreceived',onAd);
+    btn.textContent='■ 탐지 중지'; btn.classList.add('on'); dot.classList.add('live');
+  }catch(e){
+    msg.innerHTML=`<div class="note"><b>탐지를 시작할 수 없습니다.</b><br>${esc(e.message||'')}<br>
+    블루투스와 위치 권한을 허용했는지 확인하세요.</div>`;
+  }
+}
+function onAd(e){
+  const id=e.device.id, prev=devices.get(id), name=e.device.name||e.name||'';
+  const strong=e.rssi>-70;
+  if(!prev&&strong&&Date.now()>t0+1500){ if(navigator.vibrate)navigator.vibrate([120,60,120]); beep(); }
+  devices.set(id,{rssi:e.rssi,name:name||(prev&&prev.name)||'',first:prev?prev.first:Date.now(),last:Date.now()});
+  render();
+}
+function stop(){
+  if(scan)scan.stop();
+  navigator.bluetooth.removeEventListener('advertisementreceived',onAd);
+  btn.textContent='▶ 탐지 시작'; btn.classList.remove('on'); dot.classList.remove('live'); scan=null;
+}
+btn.onclick=()=>scan?stop():start();
+setInterval(()=>{if(scan)render();},2000);
+</script>
+
+</body></html>
